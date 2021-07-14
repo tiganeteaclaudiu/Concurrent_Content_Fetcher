@@ -1,8 +1,5 @@
 # Golang Coding challenge
 
-The dev team at [Sliide](https://sliide.com/) created this coding challenge to help assess your coding and problem solving skills
-Along with this file, you should find an archive with the code od the project to complete.
-
 # The Project
 
 This is a simple http service that simulates a news API.
@@ -73,10 +70,3 @@ Date: Thu, 24 Sep 2020 10:47:11 GMT
 1. Complete the `ServeHTTP` method in server.go in accordance with the specifications above.
 2. Run existing tests, and make sure they all pass
 3. Add a few tests to capture missing edge-cases. For example, test that the fallbacks are respected.
-
-Hints:
-- You can run the server simply with `go run .` in the projects directory.
-- Tests are run with `go test` in the current directory.
-- Try to keep to the standard library as much as possible
-- Latency is crucial for this application, so fetching the items sequentially one at a time might not be good enough
-# Concurrent_Content_Fetcher
