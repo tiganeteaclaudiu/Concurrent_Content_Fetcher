@@ -24,12 +24,12 @@ type ContentResponse struct {
 // getQueryParameters gets count and offset query parameters
 func getQueryParameters(r *http.Request) (count, offset int) {
 	count, err := strconv.Atoi(r.URL.Query().Get("count"))
-	if err != nil {
+	if err != nil || count < 0 {
 		count = 0
 	}
 	offset, err = strconv.Atoi(r.URL.Query().Get("offset"))
-	if err != nil {
-		count = 0
+	if err != nil || offset < 0 {
+		offset = 0
 	}
 	return
 }
