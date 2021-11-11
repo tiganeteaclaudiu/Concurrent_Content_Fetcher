@@ -1,8 +1,3 @@
-# Golang Coding challenge
-
-The dev team at [Sliide](https://sliide.com/) created this coding challenge to help assess your coding and problem solving skills
-Along with this file, you should find an archive with the code od the project to complete.
-
 # The Project
 
 This is a simple http service that simulates a news API.
